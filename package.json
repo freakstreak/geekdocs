@@ -1,0 +1,17 @@
+{
+  "name": "geekdocs",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "geekdocs/*"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces --if-present",
+    "dev:web": "npm start --workspace @geekdocs/web",
+    "dev:server": "npm run dev --workspace @geekdocs/server"
+  },
+  "keywords": [],
+  "author": "freakstreak",
+  "license": "ISC"
+}
